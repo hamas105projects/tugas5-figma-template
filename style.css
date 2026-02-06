@@ -1,0 +1,124 @@
+body{
+    background-color: oklch(97.015% 0.00011 271.152);
+    font-family: "Montserrat", sans-serif;
+}
+
+.logo{
+    width: 180px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 10px 50px 50px;
+    font-size: 20px;
+    align-items: center;
+
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 20px;
+}
+.menu ul{
+    display: flex;
+    flex-direction: row;
+}
+.menu ul li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+.button-navbar{
+    margin: 0 10px;
+    border: 2px solid oklch(35% 0.02 270);
+    padding: 12px 20px;
+    border-radius: 15px;
+
+}
+
+.header {
+  width: 90%;
+  height: auto;
+  display: grid;
+  grid-template-areas:
+    "motto illustration"
+    "vision illustration";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  margin: 20px auto 30px;
+  align-items: start;
+}
+
+.header-illustration {
+  grid-area: illustration;
+  height: 450px;
+  width: 550px;
+}
+
+.motto {
+  grid-area: motto;
+  align-self: start;
+  font-size: 70px;
+  text-align: justify;
+  max-width: 450px;
+  font-weight: 700;
+}
+
+.vision {
+  grid-area: vision;
+  align-self: start;
+  font-size: 20px;
+  margin-top: -120px;
+}
+
+.booking{
+    margin-left: 65px;
+    background-color: oklch(0.2209 0.0176 279.88);
+    color: oklch(97.015% 0.00011 271.152);
+    text-decoration: none;
+    border: 2px solid oklch(35% 0.02 270);
+    padding: 20px 20px;
+    border-radius: 15px;
+}
+
+.client{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 60px;
+}
+
+.per-client{
+    margin: 0 35px;
+}
+
+.tag-line {
+  display: block;
+  align-items: center;
+  margin-top: 50px;  
+  flex-direction: column;     
+}
+
+
+
+.head-tag{
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 65px;
+    padding: 10px 20px;
+    background-color: oklch(0.9237 0.1959 130.23);
+    font-weight: 800;
+    font-size: 36px;
+    border-radius: 13px;
+}
+.content-tag{
+    display: inline-block;
+    justify-content: center;
+    max-width: 600px;
+}
