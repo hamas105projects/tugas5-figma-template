@@ -1,5 +1,5 @@
 body{
-    background-color: oklch(97.015% 0.00011 271.152);
+    background-color: oklch(99.115% 0.00423 15.765);
     font-family: "Montserrat", sans-serif;
 }
 
@@ -114,11 +114,184 @@ body{
     padding: 10px 20px;
     background-color: oklch(0.9237 0.1959 130.23);
     font-weight: 800;
-    font-size: 36px;
+    font-size: 28px;
     border-radius: 13px;
 }
 .content-tag{
     display: inline-block;
     justify-content: center;
     max-width: 600px;
+}
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin-left: 30px;
+  padding: 40px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  align-items: stretch;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-content {
+  flex: 1;
+  margin-right: 15px; 
+  display: flex;
+  flex-direction: column; 
+}
+
+.card-content h3 {
+  font-size: 1.2rem;
+  line-height: 30px;
+  padding: 0 0 0 0;
+}
+
+.card a {
+  display: inline-flex;
+  align-items: center;
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+  margin-top: auto; 
+}
+
+.card a img {
+  margin-left: 8px;
+  width: 16px;
+  height: 16px;
+  transform: rotate(-45deg);
+}
+
+.card img.illustration {
+  width: 130px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+
+.card.white { 
+    background-color:oklch(97.015% 0.00011 271.152); 
+    color: oklch(0.2209 0.0176 279.88); 
+    
+}
+.card.white h3{ 
+    background-color: oklch(0.9237 0.1959 130.23);
+    
+}
+.card.green { 
+    background-color: oklch(0.9237 0.1959 130.23); 
+    color: oklch(97.015% 0.00011 271.152); 
+}
+.card.green h3 { 
+    background-color: oklch(0.2209 0.0176 279.88);
+}
+.card.black { 
+    background-color: oklch(0.2209 0.0176 279.88); 
+    color: oklch(0.2209 0.0176 279.88);
+}
+
+
+.card.black h3 { 
+    background-color: oklch(97.015% 0.00011 271.152); 
+}
+
+
+
+.sub-service-section {
+  display: flex;
+  gap: 40px;
+  padding: 0 10px;
+  width: 1050px;       /* dilebarin */
+  margin: 40px auto;
+  background: oklch(95.367% 0.00212 14.381); ;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  align-items: center;
+}
+
+.sub-service-text {
+  margin: 40px;
+}
+
+.sub-service-text h2 {
+  margin: 0 0 20px;
+  font-size: 2rem;
+  color: #111;
+}
+
+.sub-service-text p {
+  margin: 0 0 30px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.sub-service-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #000;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sub-service-btn:hover { background: #333; }
+
+.sub-service-image img {
+  max-width: 400px;
+  height: 300px;        /* biar pepet atas bawah */
+  display: block;
+  margin: 0 30px;
+}
+
+.success-stories {
+    max-width: 84%;
+    margin: 30px auto;
+  display: flex;
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  height: 200px;
+}
+
+.story-item {
+    display: flex;
+  flex-direction: column;   /* susun konten ke atas-bawah */
+  justify-content: space-between;
+  flex: 1;
+  padding: 0 20px;
+  border-right: 1px solid #b4adad;
+}
+
+.story-item:last-child {
+  border-right: none; /* hilangkan garis di item terakhir */
+}
+
+.story-text {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.learn-more {
+    align-self: flex-start;
+    
+  color: #00ff88;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.learn-more:hover {
+  color: #00cc66;
 }
