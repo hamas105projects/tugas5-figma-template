@@ -41,7 +41,7 @@ body{
 
 }
 
-.header {
+.main-header {
   width: 90%;
   height: auto;
   display: grid;
@@ -54,7 +54,7 @@ body{
   align-items: start;
 }
 
-.header-illustration {
+.head-illustration {
   grid-area: illustration;
   height: 450px;
   width: 550px;
@@ -293,5 +293,287 @@ body{
 }
 
 .learn-more:hover {
-  color: #00cc66;
+  color: oklch(0.9237 0.1959 130.23);
+}
+
+  .step-container {
+      max-width: 1100px;
+      margin: 30px auto;
+    }
+
+    .step {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px oklch(0.2209 0.0176 279.88);
+      margin-bottom: 16px;
+      padding: 16px 20px;
+      position: relative;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .step:hover {
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    .step-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 40px;
+    }
+
+    .step-number {
+      font-weight: bold;
+      color: #555;
+      margin-right: 8px;
+    }
+
+    .step-title {
+      flex-grow: 1;
+      font-size: 16px;
+    }
+
+    .toggle-icon {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+      transition: transform 0.3s ease;
+    }
+
+    .step.open .toggle-icon {
+      transform: rotate(45deg); /* plus jadi X */
+    }
+
+    .step-content {
+      display: none;
+      margin-top: 12px;
+      color: #666;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .step.open .step-content {
+      display: block;
+    }
+
+
+/* team.css */
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1050px;
+  margin: 40px 80px;
+}
+
+.team-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.linkedin-link {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.linkedin-link img {
+  width: 30px;
+  height: 30px;
+}
+
+.header-team {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.profile-photo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: oklch(0.9237 0.1959 130.23); /* hijau accent */
+  padding: 4px;
+}
+
+.info {
+  text-align: left;
+}
+
+.member-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.member-role {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 4px 0 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 12px 0;
+}
+
+.member-desc {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.btn-wrapper {
+  position: relative;       /* parent jadi acuan */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.btn-members {
+  position: absolute;       /* relatif ke parent .card */
+  bottom: 10px;             /* jarak dari bawah parent */
+  right: 130px;              /* jarak dari kanan parent */
+  background-color: oklch(0.2209 0.0176 279.88);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 6px;
+  border: 2px solid oklch(0.2209 0.0176 279.88);
+  cursor: pointer;
+  font-size: 20px;
+}
+.btn-members:hover {
+  background-color: oklch(0.9237 0.1959 130.23);
+  color: oklch(0.2209 0.0176 279.88);
+}
+
+
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+  background: #f1ecec;
+  max-width: 1000px;
+  border-radius: 15px;
+  margin: 30px auto;
+  height: 400px;
+}
+
+.contact-form {
+  flex: 1;
+  max-width: 500px;
+}
+
+.form-header {
+  display: flex;
+  gap: 1rem;
+}
+
+.tab {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: oklch(0.2209 0.0176 279.88);
+  color: #fff;
+  border: none;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form textarea {
+  min-height: 100px;
+}
+
+.btn {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background: oklch(0.2209 0.0176 279.88);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  
+}
+
+.contact-illustration img {
+  max-width: 250px;
+  margin-right: -50px;
+}
+
+.footer {
+  background: #111;
+  color: #eee;
+  padding: 2rem;
+  max-width: 1050px;
+  margin-left: auto;
+  margin-top: auto;
+  margin-right: auto;
+  border-radius: 15px 15px 0 0;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-nav a {
+  margin: 0 0.5rem;
+  color: #eee;
+  text-decoration: none;
+}
+
+.social img {
+  width: 24px;
+  margin: 0 0.5rem;
+}
+
+.footer-contact {
+  margin-top: 1.5rem;
+}
+
+.subscribe {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.subscribe input {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: none;
+  flex: 1;
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-bottom a {
+  color: #eee;
+  text-decoration: none;
 }
